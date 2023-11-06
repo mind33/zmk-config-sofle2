@@ -158,7 +158,7 @@
 / { macros { u_macro_btn1: u_macro_btn1 { label = "ZM_u_macro_btn1"; compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <0>; bindings = <&kp KP_SLASH &kp KP_N5>; }; }; };
 / { macros { u_macro_btn2: u_macro_btn2 { label = "ZM_u_macro_btn2"; compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <0>; bindings = <&kp KP_MINUS &kp KP_N5>; }; }; };
 / { macros { u_macro_btn3: u_macro_btn3 { label = "ZM_u_macro_btn3"; compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <0>; bindings = <&kp KP_ASTERISK &kp KP_N5>; }; }; };
-#line 4 "C:\Users\Divij\Downloads\miryoku\miryoku\miryoku_behaviors.dtsi"
+
 / {
   behaviors {
     u_mt: u_mt {
