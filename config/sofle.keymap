@@ -19,8 +19,8 @@
 #include "includes/macros.dtsi"
 #include "includes/combos.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
-#include "includes/behaviours_mod_morph.dtsi"
-#include "includes/behaviours_other.dtsi"
+// #include "includes/behaviours_mod_morph.dtsi"
+// #include "includes/behaviours_other.dtsi"
 
 #define BASE 0
 #define LOWER 1
