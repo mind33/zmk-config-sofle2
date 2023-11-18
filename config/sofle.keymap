@@ -65,9 +65,7 @@
                           &kp LGUI          &kp LALT       &kp BACKSPACE  &mo LOWER  &kp SPACE     &kp ENTER                 &mo RAISE  &kp RCTRL      &kp RALT       &kp RGUI
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&inc_dec_kp PRINTSCREEN PSCRN>;
+            sensor-bindings = <&inc_dec_kp Q R>, <&inc_dec_kp A T>;
         };
 
         lower_layer {
