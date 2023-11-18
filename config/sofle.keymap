@@ -58,16 +58,16 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE  &kp N1      &kp N2          &kp N3       &kp N4         &kp N5                                             &kp N6     &kp N7       &kp N8       &kp N9           &kp N0         &kp SEMICOLON
-&kp GRAVE   &kp Q       &kp W           &kp F        &kp P          &kp B                                              &kp J      &kp L        &kp U        &kp Y            &kp SEMICOLON  &kp BSPC
-&kp TAB     &u_mt LGUI A  &u_mt LEFT_ALT R  &u_mt LCTRL S  &u_mt LSHFT T    &kp G                                              &kp M      &u_mt RSHFT N  &u_mt LCTRL E  &u_mt RIGHT_ALT I  &u_mt RWIN O     &kp SQT
-&kp LSHFT   &kp Z       &u_mt RALT X      &kp C        &kp D          &kp V      &kp C_MUTE    &kp C_BRIGHTNESS_MINIMUM  &kp K      &kp H        &kp COMMA    &kp DOT          &kp FSLH       &kp RSHFT
-                        &kp LGUI        &kp LALT     &kp BACKSPACE  &mo LOWER  &kp SPACE     &kp ENTER                 &mo RAISE  &kp RCTRL    &kp RALT     &kp RGUI
+&kp ESCAPE  &kp N1        &kp N2            &kp N3         &kp N4         &kp N5                                             &kp N6     &kp N7         &kp N8         &kp N9             &kp N0         &kp SEMICOLON
+&kp GRAVE   &kp Q         &kp W             &kp F          &kp P          &kp B                                              &kp J      &kp L          &kp U          &kp Y              &kp SEMICOLON  &kp BSPC
+&kp TAB     &u_mt LGUI A  &u_mt LEFT_ALT R  &u_mt LCTRL S  &u_mt LSHFT T  &kp G                                              &kp M      &u_mt RSHFT N  &u_mt LCTRL E  &u_mt RIGHT_ALT I  &u_mt RWIN O   &kp SQT
+&kp LSHFT   &kp Z         &u_mt RALT X      &kp C          &kp D          &kp V      &kp C_MUTE    &kp C_BRIGHTNESS_MINIMUM  &kp K      &kp H          &kp COMMA      &kp DOT            &kp FSLH       &kp RSHFT
+                          &kp LGUI          &kp LALT       &kp BACKSPACE  &mo LOWER  &kp SPACE     &kp ENTER                 &mo RAISE  &kp RCTRL      &kp RALT       &kp RGUI
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp PRINTSCREEN PSCRN>;
         };
 
         lower_layer {
@@ -460,6 +460,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         u_lt: u_lt {
             compatible = "zmk,behavior-hold-tap";
             label = "u_lt";
